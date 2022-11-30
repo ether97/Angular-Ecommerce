@@ -6,6 +6,7 @@ import { CartService } from "./../../services/cart.service";
 @Component({
   selector: "app-cart",
   templateUrl: "./cart.component.html",
+      styleUrls: ['./cart.css'],
 })
 export class CartComponent {
   cart: Cart = {

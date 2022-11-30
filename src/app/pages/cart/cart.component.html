@@ -1,9 +1,9 @@
-<mat-card class="max-w-7xl mx-auto" *ngIf="cart.items.length">
+<mat-card class="cart-card" *ngIf="cart.items.length">
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 w-full">
     <ng-container matColumnDef="product">
       <th mat-header-cell *matHeaderCellDef="">Product</th>
       <td mat-cell *matCellDef="let element">
-        <img src="{{ element.product }}" alt="product" class="w-[100px] my-5" />
+        <img src="{{ element.product }}" alt="product" class="img" />
       </td>
       <td mat-footer-cell *matFooterCellDef="">
         <button mat-raised-button routerLink="/home">Continue Shopping</button>
@@ -28,20 +28,16 @@
     <ng-container matColumnDef="quantity">
       <th mat-header-cell *matHeaderCellDef="">Quantity</th>
       <td mat-cell *matCellDef="let element" class="w-[240px]">
-        <button
-          mat-icon-button
-          class=""
-          (click)="changeQuantity(element, 'subtract')"
-        >
-          <mat-icon class="h-4">remove</mat-icon>
+        <button class="button" (click)="changeQuantity(element, 'subtract')">
+          &minus;
         </button>
-        <span class="inline-block align-middle">
-          <p class="text-lg">
+        <span class="cart-span">
+          <p class="quantity">
             {{ element.quantity }}
           </p>
         </span>
-        <button mat-icon-button (click)="changeQuantity(element, 'add')">
-          <mat-icon class="h-4">add</mat-icon>
+        <button class="button" (click)="changeQuantity(element, 'add')">
+          &plus;
         </button>
       </td>
       <td mat-footer-cell *matFooterCellDef=""></td>

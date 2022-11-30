@@ -1,0 +1,30 @@
+.cart-card {
+    max-height: 500px;
+}
+
+.img {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+}
+
+.icon {
+    height: 4px;
+    color: black;
+}
+
+.cart-span {
+    display: inline-block;
+    align-self: center;
+    line-height: 50px;
+    height: 50px;
+}
+
+.quantity {
+    font-size: x-large;
+}
+
+.button {
+    height: 50px;
+    width: 50px;
+}

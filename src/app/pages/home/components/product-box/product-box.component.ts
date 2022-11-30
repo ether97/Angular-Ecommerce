@@ -4,6 +4,7 @@ import { Product } from "src/app/models/product.model";
 @Component({
   selector: "app-product-box",
   templateUrl: "product-box.component.html",
+  styleUrls: ['./product-box.css'],
 })
 export class ProductBoxComponent {
   @Input() fullWidthMode = false;

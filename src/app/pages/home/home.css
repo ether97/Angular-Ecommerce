@@ -1,0 +1,17 @@
+.drawer-container {
+    max-width: 75vw;
+    margin: auto;
+}
+
+.mat-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: gray;
+}
+
+.container {
+    width: 100%;
+}

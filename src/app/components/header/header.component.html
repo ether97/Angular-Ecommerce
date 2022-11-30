@@ -1,4 +1,4 @@
-<mat-toolbar class="max-w-7xl mx-auto border-x justify-between">
+<mat-toolbar class="toolbar">
   <a routerLink="home">Code with Matt</a>
   <button mat-icon-button [matMenuTriggerFor]="menu">
     <mat-icon
@@ -10,7 +10,7 @@
   </button>
   <mat-menu #menu="matMenu">
     <div class="px-3 flex-column divide-y">
-      <div class="p-3 flex justify-between">
+      <div class="cart-dropdown">
         <span class="mr-16">{{ itemsQuantity }} Items</span>
         <a routerLink="cart">View Cart</a>
       </div>

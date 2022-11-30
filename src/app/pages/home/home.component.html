@@ -1,7 +1,4 @@
-<mat-drawer-container
-  [autosize]="true"
-  class="min-h-full max-w-7xl mx-auto border-x"
->
+<mat-drawer-container [autosize]="true" class="drawer-container">
   <mat-drawer mode="side" opened="true" class="p-6">
     <app-filters (showCategory)="onShowCategory($event)"></app-filters>
   </mat-drawer>
@@ -22,7 +19,7 @@
         <app-product-box
           [product]="product"
           (addToCart)="onAddToCart($event)"
-          class="w-full"
+          class="container"
           [fullWidthMode]="cols === 1"
         >
         </app-product-box>

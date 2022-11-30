@@ -3,6 +3,7 @@ import { Component, Output, EventEmitter} from "@angular/core"
 @Component({
   selector: "app-products-header",
   templateUrl: "./products-header.component.html",
+  styleUrls: ['./products-header.css'],
 })
 export class ProductsHeaderComponent {
   sort = "";
